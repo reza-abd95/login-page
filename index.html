@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Training media query - form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="left-div">
+                <img src="./images/avengers.jpg" alt="avengers">
+            </div>
+            <div class="right-div">
+                    <div class="img-cap">
+                        <img src="./images/Captain_America.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Login Form!!!
+                        </h1>
+                    </div>
+                    <div>
+                        <form  class="form">
+                            <div class="input-main">
+                                <div class="input-container">
+                                    <label for="username" >UserName:</label>
+                                    <input id="username" class="input" type="text" onchange="checkUserName()">
+                                </div>
+                                <p id="user_error" class="error">! It should be less than 15 characters and contain only English letters.</p>
+                            </div>
+                            <div class="input-main">
+                                <div class="input-container">
+                                    <label for="email">E-Mail:</label>
+                                    <input id="email" class="input" type="email" onchange="checkEmail()">
+                                </div>
+                                <p id="email_error" class="error" >! It should be It must be the correct email form like : HajReza@gmail.com</p>
+                            </div>
+                            <div class="input-main">
+                                <div class="input-container">
+                                    <label for="password">Password:</label>
+                                    <input id="password" class="input" type="password" onchange="checkPassword()">
+                                </div>
+                                <p id="pass_error" class="error" >! Use At Least 8 Characters , Uppercase and Lowercase Letters And Numbers .</p>
+
+                            </div>
+                            <button class="btn">
+                                SUBMIT
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/istockphoto-1267967888-170667a.jpg) ;
+    background-size: cover;
+}
+.container{
+    border-radius: 16px;
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    background-color: #fff9a075;
+    overflow: hidden;
+}
+.left-div{
+    display: none;
+}
+
+.right-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.img-cap{
+    height: 100px;
+    width: 100px;
+
+}
+.img-cap img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow:  6px 6px 12px #6d6c6c,
+    -6px -6px 12px #ffffff;
+
+}
+.title{
+    color: #39386E;
+    margin: 24px 0;
+}
+.form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.input-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input{
+    margin-top: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 1em;
+    background-color: #e6e6e6;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.384);
+    transition: 300ms ease-in-out;
+}
+
+.btn{
+    border: none;
+    width: 250px;
+    height: 40px;
+    color: #B31C31;
+    margin-top: 20px ;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow:  6px 6px 12px #c9c9c9,
+                 -6px -6px 12px #ffffff;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.error {
+    font-size: 1rem;
+    margin-top: 4px;
+    font-weight: 500;
+    visibility:hidden;
+    color: #e11934;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .left-div{
+        display:flex;
+        width: 50%;
+    }
+    .left-div img{
+        width: 100%;
+    }
+    .right-div{
+        width: 50%;
+    }
+}
